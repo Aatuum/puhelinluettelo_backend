@@ -41,7 +41,7 @@ app.use(
   morgan(':method :url :status :res[content-length] - :response-time ms :body')
 );
 
-app.post('/api/persons', (req, res) => {
+app.post('/', (req, res) => {
   const body = req.body;
 
   if (!body.name || !body.number) {
